@@ -1,0 +1,225 @@
+Version-1.5.0
+Update: Moved MailChimp functionality to a separate addon.
+Added:  Send registrants data to MailChimp.
+Added:  Calendar and grid views for archive page.
+Added:  Option to import events from CSV file.
+Added:  Option to make archive page full width.
+
+Version-1.4.3
+Added: Register button for single events in widget shortcode.
+Added: Option to export events (all, future, past, on going) to CSV.
+Added: Option to export registrations (with dates nad event title filters) to CSV.
+Added: Option to export subscriptions to CSV.
+Fixed: Add to calendar option for google calendar when start and end dates are same.
+Added: Option to disable archive page.
+Fixed: Captcha execution on subscribers form.
+Fixed: Location and date filters in shortcode.
+Fixed: location duplication issue.
+Fixed: CSS for calendar list dropdown.
+
+Version-1.4.2
+Updated: Subscriber form layout for number and permission fields.
+Fixed: Class conflict with form fence plugin.
+Fixed: Location not displaying properly in widget.
+
+Version 1.4.1
+Fixed:  CSS conflict with list style.
+Fixed:  Forms CSS for show/hide fields.
+
+Version 1.4.0
+Added: Metabox to limit seats per registration for each event.
+Fixed: List style and indentation on archive and single event page.
+Fixed: Edit entry not working for subscriptions.
+Fixed: Empty venue when no location selected.
+Added: Zapier Integration Add-on
+Added: Settings fields to show/hide optional fields in registration/subscribers forms.
+Added: Filter events by type on posts screen.
+Added: Option to turn webinar confirmation email on/off.
+Added: Duplicate event option to create a copy of the same events.
+Added: WP-editor for email templates and forms descriptions.
+Updated: Background of meta box heading and event type field to make it stand out.
+Added: Checkbox to show/hide events on the archive page.
+Added: Unique class selector for each event on the archive page.
+Added: Type attribute in the shortcode to display events of one type only.
+Added: Settings field for redirect URL for event type webinar.
+
+Version 1.3.4
+Fixed: Event description showing in page header.
+Fixed: Untitled location appearing blank in dropdown.
+Added: Phone number format as placeholder for phone field.
+Fixed: Update map URL according to map type in settings.
+Fixed: Form submission issue due to expired recaptcha.
+Fixed: Edit location on front end when changed in CPT.
+Added: Captcha expired callback for forms.
+
+Version 1.3.2
+Fixed: Issue with subscriber form not displaying.
+Fixed: min-height for wp-event-field.
+Fixed: Title field for location cpt made required.
+
+Version 1.3.1
+Fixed: CSS for calendar list dropdown.
+Fixed: Options for hear about us dropdown.
+
+Version 1.3.0
+Added:  Option to choose type of captcha (invisibe/checkbox).
+Added:  Locations post type to organize locations data
+Added:  Google maps integration.
+Added:  Option to choose type of map displayed on landing page.
+
+Version 1.2.7
+Fixed: CSS for archive details section.
+Fixed: CSS and HTML for archive button and event title.
+
+Version 1.2.6
+Fixed: Archive title duplication issue.
+Fixed: Archive button width on firefox.
+
+Version 1.2.5
+Updated: Separate Email templates for Seminars and webinars.
+Added:   Firm Information tab in plugin settings.
+Updated: HTML and CSS for registration and subscriber forms.
+Added:   Option to show/hide title in wpevents_list shortcode.
+Added:   Zip code field in registration details for admin email.
+Added:   Close Registrations checkbox on edit event page.
+Added:   Settings field for adding meta description on archive page.
+Updated: CSS for events archive page.
+
+Version 1.2.4
+Fixed: Default options for hear about us dropdown
+fixed: CSS for pagination on devices below 600px.
+
+Version 1.2.3
+Fixed:   View Registrations link showing on all post types.
+Updated: HTML support for before and after form-sections' textareas.
+
+Version 1.2.2
+Fixed: Added post status and event status conditions in go back button URL.
+
+Version 1.2.0
+Added:   Events Status column on events posts page
+Added:   Number of posts for event status filter tabs on posts page
+Added:   View registrations link in row actions on posts screen
+Fixed:   Highlight active view tabs on posts screen
+Added:   Generic form structure to add fields to forms
+Added:   View/Edit single registration page
+Added:   Option to approve/cancel registrations
+Added:   Option to resend user and admin notification when registraton is edited.
+Added:   Option to edit confirmation message for individual events.
+Updated: logs.txt file to record who edited the entry.
+Added:   Option to customize hear about us dropdown.
+Added:   Option to customize consent and disclaimer messages in registration form.
+Added:   Date and Time metaboxes in quickedit section in posts dashboard.
+Added:   reCAPTCHA for validation of forms.
+Added:   Validation of metaboxes on edit event page.
+Fixed:   Guest Fields Alignment in registration form
+Fixed:   Hover effect on text when details button is hovered
+Fixed:   Breadcrumbs not showing on archive page.
+
+Version 1.1.12
+Fixed: Content width under event details button on archive page.
+
+Version 1.1.1
+Added: Empty Trash button for permanently deleting bulk entries on trash tab.
+Added: Mailchimp integration.
+Added: Register button on events archive.
+Added: Option to set Maximum number of bookings per registration
+Added: Post screen columns for author, total seats and remaining seats.
+Fixed: Conflict with custom sorting of posts with post type order plugin.
+Added: Option to change text when events registration is closed.
+Added: Guest Fields for Seminars.
+Added: Sanitization of data from registration and subscriber forms.
+Added: Remaining seats check in form request class.
+Added: Timestamp in request log file.
+Fixed: Delete all categories on plugin uninstall.
+Added: Check for existence of DB Tables before entry.
+
+Version 1.1.01
+Added: Category and Class attributes in wpevents shortcode
+
+Version 1.1.0
+Added:  Searchable dropdown to filter events by month.
+Update: List Entries screen revamped to tabbed (registrations and subscriptions tabs) layout.
+Added:  Option to single/bulk delete, restore and permanently delete list Entries.
+Added:  Option to search entries from the given list by all fields.
+Added:  Searchable dropdown to filter events by title and category.
+Added:  All and Trash tabs to view entries separately.
+Update: Get number of booked seats from registrations table in database instead of post meta (seats updated on deletion and restore).
+Added:  Option to set number of entries per page in screen options.
+Added:  Status column added in events_registration table in database to check entries' status (active, trash, permanently deleted).
+
+Version 1.0.500
+Fixed: wpevents shortcode event redirecting to single page if external url is added
+Fixed: User can visit single event page from URL if external URL is added ( Only administrators can visit single page now )
+Fixed: Same key for before and after registration form text boxes in settings->Forms->RegistrationForm
+Added: All required Fields added in 'wpe_registration_details' email shortcode
+
+Version 1.0.449
+Added:   Details button added on the Archive Events listing
+Added:   Category and event type in templates/genesis/archive-wp_events.php
+Removed: Extra p removed from the single page content.
+Removed: Extra <br> tag removed after download .ics button
+Update:  Improved archive-wp_events.php
+Update:  Improved taxonomy-wp_events.php
+Update:  Improved wpevents_list shortcode
+
+Version 1.0.448
+Added:   Genesis Specific Template added.
+Added:   compatibility with genesis breadcrumbs.
+Added:   Compatibility with Yoast SEO breadcrumbs.
+Added:   wpe-pagination class added to archive pagination.
+Removed: Disable Archive button in Settings->Display.
+Added:   filter added wpe_default_query_args.
+Update:  filter wp_events_archive_page_title changed to wpe_archive_page_title_text
+Update:  filter wpe_archive_page_title changed to wpe_archive_page_title_html
+
+Version 1.0.447
+Fixed: Extra margin removed from hear about us select in wordpress.
+Fixed: Extra Spaces between Registration Form fields.
+Fixed: Missing Guest Info
+Added: Jquery Serialize Plugin to serialize Form Data to JSON object
+Added: Guest Info added for webinars in [wpe_registration_details] shortcode.
+
+Version 1.0.446
+Added: Download .ics file option on single events page
+
+Version 1.0.445
+Fixed:   duplicate start and end date displays in [wpevents_list] shortcode
+Removed: wpe_p_id(hidden field) from Registration form
+Updated: Archive Page Query Order
+
+Version 1.0.444
+Removed: Post exists validation on form submission
+
+Version 1.0.443
+Updated: Subscriber form description field changed to text area 
+
+Version 1.0.442
+Fix: Contact Person in single events not updated.
+
+Version 1.0.441
+Tweak: Form requests are submitting via AJAX.
+Tweak: Admin Email changed to Notification Email
+Tweak: Event Notification changed to Contact Person
+
+Version 1.0.3
+Added: Event Status added Future|Past|Ongoing
+
+Version 1.0.2
+Added:   WP Events Archive template added to select from Page Attributes
+Added:   priority set to high for custom meta fields
+Added:   new file added in inlcuides/wp-events-global-functions.php to add global functions
+Added:   Global function "wpevent_date_time()" added to convert UNIX timestamp meta(event start/end date-time) to an associative array
+Added:   Single Template can be over ride in theme
+Updated: wpevent-start-date & wpevent-start-time meta fields with wpevent-start-date-time
+Updated: wpevent-end-date & wpevent-end-time meta fields with wpevent-end-date-time
+Updated: updated $_POST to filter_input( INPUT_POST ) in class-wp-events-admin.php
+Updated: date format ( dd-mm-yy ) in jquery date picker change to yy-mm-dd
+Updated: meta query added to archive/taxonomy query
+Updated: number in shortcode set to posts_per_page
+Fixed:   Empty Archive title displays blank h1
+Fixed:   posts_per_page overrides posts number on whole website
+Fixed:   pagination page/2 going to 404
+Fixed:   subscriber form redirects to archive page by default now redirect to the requested page
+Removed: default title "Events" removed from settings->display->Archive Page Title
+Removed: is_past_event() function removed from class-wp-events-public.php

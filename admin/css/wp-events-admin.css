@@ -1,0 +1,743 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+ .wpevents-main .wp-event-field{
+    cursor: pointer;
+}
+.wpevents-main .wp-event-section-title p {
+    font-size: 18px;
+    font-weight: 500;
+}
+.wpevents-main .wp-event-field {
+    width: 100%;
+    padding: 8px 15px !important;
+    margin: 5px 0 0;
+    min-height: 44px;
+}
+.wpevents-main .wp-event-subsection .event-control {
+    max-width: 48%;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.wpevents-main .wp-event-subsection .event-control.wpe-left{
+    margin-left:0;
+}
+
+.wpevents-main .wp-event-subsection .event-control.wpe-right{
+    margin-left: 15px;
+}
+
+.wpevents-main .post-type-wp_events div#commentsdiv {
+    display: none;
+}
+
+.wpevents-main .all-day-event.event-control {
+    display: block;
+}
+
+.post-type-wp_events .editor-styles-wrapper {
+    background-color: #e7f4fb;
+}
+
+.wpe-fields-description {
+    display: block;
+    margin: 5px 0 5px 2px;
+}
+
+.wp_events_page_wp_forms_entries .row-actions.visible {
+    position: relative;
+}
+
+.wp_events_page_wp_forms_entries tr:hover .row-actions {
+    position: static;
+}
+
+#wpe_form_submit_message {
+    width: 500px;
+    height: 50px;
+}
+body .wpe-settings-field {
+    max-width: 300px;
+    width: 100%;
+    padding: 5px 10px !important;
+}
+
+.wpe-main-list .row {
+    display: flex;
+    padding-left: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.wpe-main-list .heading {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.wpe-main-list .row span {
+    min-width: 195px;
+    width: auto;
+    display: block;
+}
+.wpe-main-list .wpe-list-entry {
+    margin: 10px 0;
+}
+.wpe-admin-headings {
+    text-align: center;
+    font-size: 26px;
+}
+.wpe-seprator {
+    border-bottom: 1px solid #333;
+    padding: 30px;
+    margin: 0 25%;
+    margin-bottom: 50px;
+}
+.wpe-entries-heading {
+    background: #333333b5;
+    padding: 10px 20px !important;
+    color: #ffff;
+    font-size: 18px !important;
+    width: fit-content;
+}
+
+a.wpe-rmv {
+    display: block;
+    color: #ff0000;
+    text-decoration: none;
+}
+
+a.wpe-upl:focus {
+    box-shadow: none;
+}
+
+.wp-event-textarea {
+    width: 100%;
+    min-height: 100px;
+    margin-top: 5px;
+}
+
+.wpevents-main .confirmation_message.event-control {
+    margin-left: 0;
+    width: 100%;
+    max-width: 97%;
+}
+
+a.view-page .dashicons-external {
+    padding: 9px 0;
+}
+
+a.view-page {
+    text-decoration: none;
+}
+
+.shortcode-info {
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    z-index: 999;
+}
+
+.shortcode-text {
+    visibility: hidden;
+    background-color: #fff;
+    color: #333;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    text-align: left;
+    width: max-content;
+    display: flex;
+    flex-direction: revert;
+    justify-content: space-between;
+}
+
+.shortcode-info:hover .shortcode-text {
+    visibility: visible;
+}
+
+.left-col span, .right-col span {
+    display: block;
+}
+
+span.shortcode-text div {
+    margin-right: 25px;
+}
+
+span.shortcode-text div:last-child {
+    margin-right: 0;
+}
+.other-post {
+    display: none;
+    padding:10px
+}
+.mail-accordion {
+    margin:0;
+    padding:0;
+}
+.mail-accordion > li {
+    list-style-type: none;
+}
+.mail-accordion li .other-hold {
+    display: block;
+    background: #e6e6e6;
+    padding: 10px 70px 10px 10px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    width: 52%;
+    border-radius: 3px;
+}
+.mail-accordion li {
+    margin-bottom:10px;
+}
+.mail-accordion .other-hold::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #e6e6e6;
+    vertical-align: middle;
+    right: 20px;
+    top: 50%;
+    margin-top: -7px;
+    transition:transform 0.5s;
+    transform: rotate(0deg);
+    z-index: 1;
+}
+.mail-accordion .other-hold::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #000;
+    vertical-align: middle;
+    right: 20px;
+    top: 50%;
+    margin-top: -5px;
+    transition:transform 0.5s;
+    transform: rotate(0deg);
+}
+.mail-accordion .other-hold.active::before,
+.mail-accordion .other-hold.active::after {
+    transform: rotate(180deg);
+}
+.mail-accordion .other-hold.active::before{
+    margin-top: -3px;
+}
+.mail-accordion p{
+    margin:0
+}
+
+.wpe-settings-field.wpe-sub-tab-field {
+    max-width: 50%;
+}
+
+.mail-accordion li .other-hold:hover {
+    cursor: pointer;
+    background: #dedede;
+}
+/*remove admin notices from settings screen*/
+.wpe-settings-content .updated {
+    display: none;
+}
+.wpe-settings-content ul.subsubsub {
+    width: 100%;
+    margin-top: -8px;
+    margin-bottom: 15px;
+}
+select.wpe-contact-person {
+    width: -webkit-fill-available;
+}
+
+/* The switch - the box around the slider */
+.wpe-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+/* Hide default HTML checkbox */
+.wpe-checkbox input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(16px);
+}
+
+.tablenav .actions span {
+    margin-right: 3px;
+    height: 30px;
+}
+
+#wpe-filter-start-date, #wpe-filter-end-date {
+    float: left;
+    margin-right: 3px;
+    height: 30px;
+}
+
+.column-start_time, .column-end_time, .column-start_date, .column-end_date {
+    display: none;
+}
+
+.date-time-metaboxes input {
+    width: 100%;
+}
+
+body.wp-admin .ui-datepicker:not(.gform-legacy-datepicker) a.ui-state-active,
+body.wp-admin a.ui-state-active,
+body.wp-admin a.ui-state-active:hover  {
+    background-color: #3498db !important;
+    color: #fff;
+    background: none;
+}
+body.wp-admin .ui-datepicker:not(.gform-legacy-datepicker) a.ui-state-active,body.wp-admin .ui-datepicker:not(.gform-legacy-datepicker) a.ui-state-active:hover {
+    background-color: #3498db !important;
+    color: #fff;
+    background: none;
+}
+body .ui-datepicker:not(.gform-legacy-datepicker) a.ui-state-default {
+    padding: 0px;
+}
+
+.go-back-link a {
+    text-decoration: none;
+}
+
+.dashicons-arrow-left-alt {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+:root{
+    --succes-color: #8c8f94;
+    --error-color: #e74c3c;
+}
+
+.event-control.success input {
+    border-color: var(--succes-color);
+}
+
+.event-control.the-error input {
+    border-color: var(--error-color);    
+}
+
+.event-control small{
+    color: var(--error-color);
+    visibility: hidden;
+}
+
+.event-control.the-error small{
+    visibility: visible;
+}
+
+body .wpe-form-control select,
+body .wpe-form-control .wpe-field {
+    border: 1px solid #9092b2;
+}
+
+.wpe-admin-form-holder {
+    width: 70%;
+    float: left;
+    border: 1px solid #e3e6ef;
+    box-shadow: 0 1px 4px rgba(18, 25, 97, 0.08);
+    padding: 30px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.wpe-register-form-container input,
+.wpe-register-form-container select {
+    padding: 10px 8px;
+    border-radius: 0px;
+}
+
+.wpe-sidebar {
+    width: 25%;
+    float: left;
+}
+
+.wpe-field:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.wpe-field:disabled, .wpe-field[readonly] {
+    background-color: #e9ecef;
+    opacity: 1;
+}
+.disabledform .wpe-field {
+    border: 1px solid #fff;
+    background-color: #fff;
+    pointer-events: none;    
+}
+
+.wpe-btn {
+    display: inline-block;
+    font-weight: 400;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    color: #fff;
+    background-color: #007cba;
+    border-color: #007cba;
+    cursor: pointer;
+    margin: 10px 10px 0 0;
+  }
+
+.wpe-btn:hover {
+    background-color: #006ba1;
+    border-color: #006ba1;
+}
+
+.wpe-field-container label {
+    font-weight: 700;
+}
+
+.wpe-entry-header {
+    background-color: white;
+    display: block;
+    padding: 5px 0;
+    margin-bottom: 20px;
+}
+
+.wpe-entry-title {
+    font-weight: 700;
+}
+ 
+.wpe-admin-form-holder-wrap {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin: 0 auto 50px;
+}
+
+.wpe-sidebar-section {
+    background-color: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #e3e6ef;
+    box-shadow: 0 1px 4px rgba(18, 25, 97 , 0.08);
+}
+
+.wpe-entry-info {
+    margin-bottom: 20px;
+}
+
+.wpe-to-trash {
+    text-decoration: none;
+    border: 1px solid #BB0000;
+    color: #BB0000;
+    border-radius: .25rem;
+    padding: .375rem .75rem;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.wpe-to-trash:hover {
+    background: #BB0000;
+    color: #fff;
+    opacity: 0.8;
+}
+
+span.info-heading {
+    font-weight: 700;
+}
+
+span.wpe-show-empty {
+    text-align: right;
+    float: RIGHT;
+}
+
+.wpe-logo {
+    font-size: 30px;
+    padding-right: 10px;
+    vertical-align: sub;
+}
+
+.wpe-header {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    background: #dcdcde;
+    box-sizing: border-box;
+    margin-top: 0px;
+    padding: 20px 0;
+}
+.wpe-header-wrap {
+    padding: 0 20px 0 40px;
+    margin: 0 auto;
+}
+
+.wpe-header h1, .wpe-page-header h1 {
+    display: inline;
+}
+
+.wpe-page-header {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 0px;
+    padding: 20px 0;
+}
+
+.wpe-header-title {
+    padding-left: 10px;
+    margin: 5px 0;
+    letter-spacing: -1px;
+}
+
+.wp_events_page_wpe_view_entry #wpcontent,
+.wp_events_page_wp_forms_entries #wpcontent {
+    padding-left: 0;
+}
+
+.wp_events_page_wp_forms_entries .wrapper {
+    padding: 0 20px 0 40px;
+}
+
+/*==========================
+        SideBar
+==========================*/
+
+.section-header {
+    display: flex;
+    flex-direction: revert;
+    justify-content: space-between;
+    border-bottom: 1px solid #3c434a42;
+}
+
+.section-heading,
+.section-actions{
+    padding: 0 10px;
+}
+
+
+.section-heading {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.section-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-body {
+    padding: 10px;
+}
+
+.section-body span {
+    display: block;
+    padding: 5px 0;
+    word-break: break-all;
+}
+
+.section-footer {
+    background: #f6f9fc;
+    padding: 12px;
+}
+
+.publish-actions {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.wpe-action-icon {
+    color: #3c434a;
+    cursor: pointer;
+}
+
+.wpe-switch-entry {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    padding: 0px 25px;
+    color: #424242;
+}
+
+.wpe-switch-entry .dashicons {
+    font-size: 9px;
+    border: 1px solid #424242;
+    border-radius: 14px;
+    text-decoration: none;
+    width: 16px;
+    height: 13px;
+    vertical-align: middle;
+    color: #424242;
+    opacity: 0.5;
+    font-weight: 700;
+    padding-top: 3px;
+    background-color: white;
+}
+
+.wpe-entry-controls {
+    max-width: 1100px;
+    margin: 50px auto 5px;
+}
+
+.wpe-switch-entry .dashicons:hover {
+    opacity: 1;
+    color: #007cba;
+    border: 1px solid #007cba;
+}
+
+.isDisabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.isDisabled:hover {
+    color: #424242;
+}
+
+.wpe-settings-title.wp-event-section-title {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.post-type-wp_events .postbox h2 {
+    background-color: #C0C0C0;
+}
+
+.wpe-event-type {
+    background-color: #3333;
+    text-align: center;
+}
+
+.post-type-locations .wp-events-maps {
+    width: 49%;
+    display: inline-block;
+    margin-right: 0.5%;
+}
+
+.post-type-locations .wp-events-maps .event-control {
+    max-width: 100%;
+}
+
+select#wpe-locations {
+    padding: 8px 15px !important;
+    margin: 5px 0 0;
+}
+
+.wp-events-location label {
+    font-weight: 400;
+}
+
+.wpe-location-btn {
+    display: block;
+}
+
+#wpe-no-map {
+    width: 100%;
+    height: 375px;
+    background-color: #d2d3d6;
+    position: relative;
+}
+
+p.wpe-no-map {
+    position: absolute;
+    width: 95px;
+    height: 20px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+body .wpe-add-location.event-control.wpe-right {
+    vertical-align: text-bottom;
+}
+
+#wp-webinar_success_message-disable-editor-wrap {
+    pointer-events: none;
+}
+
+.wpe-settings-content.wrap .wp-editor-wrap {
+    max-width: 725px;
+}
+
+.wpe-registration-form {
+    padding: 20px 0 0;
+}
+
+.wpe-registration-form .label {
+    line-height: 1.3;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.wpe-registration-form td:nth-child( 2n ) {
+    margin: 0 15px;
+    display: block;
+}
+
+.wpe-settings-content iframe {
+    height: 250px !important;
+}
+
+input#wpevent-limit-seats {
+    width: 30%;
+}
+
+.wpe-archive-views td {
+    padding: 0 10px 10px 10px;
+}
